@@ -1,0 +1,7 @@
+
+  <!-- 搜索框 -->
+  <view class="search">
+    <view class="content">
+      <icon type="search" size="16" /> 搜索
+    </view>
+  </view>

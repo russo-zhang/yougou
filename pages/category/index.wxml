@@ -1,0 +1,25 @@
+<view class="container">
+   <!-- 搜索框组件 -->
+  <search/>
+
+  <view class="main">
+    <view class="list">
+      <view wx:for="{{cateList}}" wx:key="{{index}}" class="cate_list_item {{index===current ? 'active':''}}" bindtap="tapList" data-index="{{index}}">
+        <view class="{{index===current ? 'activeView':''}}">{{item.cat_name}}</view>
+      </view>
+    </view>
+
+    <view class="brands">
+      <view class="brand" wx:for="{{brands}}" wx:key="{{index}}">
+        <view class="title">/ {{item.cat_name}} /</view>
+        <view class="content">
+          <view class="content_item" wx:for="{{item.children}}" wx:key="{{index}}">
+            <image src="{{item.cat_icon}}"></image>
+            <view class="name">{{item.cat_name}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+  </view>
+</view>

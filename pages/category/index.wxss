@@ -1,0 +1,80 @@
+
+
+.main {
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 100rpx;
+}
+
+/* 分类列表 */
+.main .list {
+  height: 100%;
+  overflow: scroll;
+}
+
+.main .list .cate_list_item {
+  width: 198rpx;
+  height: 100rpx;
+  line-height: 60rpx;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+  text-align: center;
+  background: #f4f4f4;
+  border-bottom: 1px solid #eee;
+}
+
+.main .list .cate_list_item>view {
+  border-left: 8rpx solid rgba(255, 255, 255, 0);
+  border-right: 8rpx solid rgba(255, 255, 255, 0);
+}
+
+.main .list .cate_list_item .activeView {
+  border-left: 8rpx solid #eb4450;
+}
+
+.main .list .active {
+  background: white;
+}
+
+/* 品牌 */
+.main .brands {
+  width: 552rpx;
+  height: 100%;
+  overflow: scroll;
+}
+
+.main .brands .brand {
+  width: 100%;
+  text-align: center;
+}
+
+.main .brands .title {
+  margin: 30rpx 0;
+}
+
+.main .brands .content {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.main .brands .content_item {
+  width: 33.33%;
+  margin-bottom: 30rpx;
+}
+
+.main .brands .content image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.main .brands .content>view {
+  font-size: 14px;
+  color: #666;
+  margin-top:-20rpx;
+}
