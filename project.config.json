@@ -40,7 +40,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 1,
+			"current": 7,
 			"list": [
 				{
 					"id": -1,
@@ -50,9 +50,51 @@
 					"scene": null
 				},
 				{
+					"id": 1,
+					"name": "pages/searchList/index",
+					"pathName": "pages/searchList/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 2,
+					"name": "pages/detail/index",
+					"pathName": "pages/detail/index",
+					"query": "goods_id=43984",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "pages/searchList/index",
+					"pathName": "pages/searchList/index",
+					"query": "query=曲面电视",
+					"scene": null
+				},
+				{
 					"id": -1,
-					"name": "pages/index/index",
-					"pathName": "pages/index/index",
+					"name": "pages/cart/index",
+					"pathName": "pages/cart/index",
+					"query": "goods_id=43982",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/personal/index",
+					"pathName": "pages/personal/index",
+					"query": "goods_id=43984",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/personal/index",
+					"pathName": "pages/personal/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/demo/index",
+					"pathName": "pages/demo/index",
 					"scene": null
 				}
 			]

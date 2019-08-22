@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "mp-slideview": "../../components/slideview/slideview",
+    "mp-cells": "../../components/cells/cells",
+    "mp-cell": "../../components/cell/cell",
+    "mp-dialog": "../../components/dialog/dialog"
+  },
+  "navigationBarBackgroundColor":"#3171b7",
+  "navigationBarTitleText":"王者荣耀4周年"
+}

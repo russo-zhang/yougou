@@ -13,10 +13,15 @@
       <view class="brand" wx:for="{{brands}}" wx:key="{{index}}">
         <view class="title">/ {{item.cat_name}} /</view>
         <view class="content">
-          <view class="content_item" wx:for="{{item.children}}" wx:key="{{index}}">
+          <navigator 
+          url="/pages/searchList/index?query={{item.cat_name}}"
+          data-name="{{item.cat_name}}"
+          class="content_item" 
+          wx:for="{{item.children}}" 
+          wx:key="{{index}}" >
             <image src="{{item.cat_icon}}"></image>
             <view class="name">{{item.cat_name}}</view>
-          </view>
+          </navigator>
         </view>
       </view>
     </view>

@@ -8,9 +8,11 @@ App({
       if(err.data.meta.status!==200){
         // console.log(err)
         console.log(err.data.meta.msg)
+        return 
       }
       else if(err.statusCode!==200) {
         console.log(err.errMsg)
+        return
       }
     })
   }

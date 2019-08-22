@@ -1,0 +1,34 @@
+<view class="box">
+  <view class="container">
+    <view class="forever {{isShow[0]? 'active':''}}">
+      <image class="forever" src="http://game.gtimg.cn/images/yxzj/img201606/heroimg/136/136.jpg"></image>
+    </view>
+    <view class="{{isShow[1]? 'active':''}}">
+      <image class="img" src="../../images/thank.png"></image>
+    </view>
+    <view class="forever {{isShow[2]? 'active':''}}">
+      <image src="http://game.gtimg.cn/images/yxzj/img201606/heroimg/112/112-smallskin-4.jpg"></image>
+    </view>
+    <view class="{{isShow[3]? 'active':''}}">
+      <image class="img skin" src="../../images/skin.png"> </image>
+    </view>
+    <view class="img" bindtap="handleClick">
+      <image class="click" src="../../images/click.png"> </image>
+    </view>
+    <view class="forever {{isShow[5]? 'active':''}}">
+      <image class="img" src="http://game.gtimg.cn/images/yxzj/img201606/heroimg/136/136-smallskin-3.jpg"></image>
+    </view>
+    <view class="forever {{isShow[6]? 'active':''}}">
+      <image src="http://game.gtimg.cn/images/yxzj/img201606/heroimg/131/131.jpg"></image>
+    </view>
+    <view class="{{isShow[7]? 'active':''}}">
+      <image class="img" src="../../images/thank.png"></image>
+    </view>
+    <view class="forever {{isShow[8]? 'active':''}}">
+      <image src="http://game.gtimg.cn/images/yxzj/img201606/heroimg/131/131-smallskin-3.jpg"></image>
+    </view>
+  </view>
+</view>
+<mp-dialog title="中奖提示" show="{{dialogShow}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
+    <view>恭喜你获得 电玩小子(永久)</view>
+</mp-dialog>

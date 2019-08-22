@@ -1,0 +1,57 @@
+<view class="container">
+  <!-- 轮播图 -->
+  <swiper autoplay indicator-dots indicator-active-color="#fff" indicator-color="rgba(255, 255, 255, .3)">
+    <block wx:for="{{goodsInfo.pics}}" wx:key="index">
+      <swiper-item>
+        <image src="{{item.pics_big}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <!-- 价格与介绍部分 -->
+  <view class="main">
+    <!-- 价格 -->
+    <view class="price">¥ {{goodsInfo.goods_price}}</view>
+
+    <!-- 介绍与收藏 -->
+    <view class="text">
+      <view class="introduce">{{goodsInfo.goods_name}}</view>
+      <view class="collect">
+        <view class="iconfont iconicon-test"></view>
+        收藏
+      </view>
+    </view>
+
+    <!-- 运费 -->
+    <view class="freight">快递: 免运费</view>
+  </view>
+
+  <!-- 促销 -->
+  <view class="discount">
+    促销
+    <text>满300减30元</text>
+  </view>
+
+  <rich-text nodes="{{goodsInfo.goods_introduce}}" ></rich-text>
+
+</view>
+
+<!-- 客服对话按钮(透明的) -->
+<button open-type="contact" bindcontact="handleContact" class="contact_btn">联系客服</button>
+
+<!-- 底部导航栏 -->
+<view class="bottom_nav">
+  <view class="left">
+    <view class="contact">
+      <view class="iconfont iconEarphonesmicrophone"></view>
+      联系客服
+    </view>
+    <navigator url="/pages/cart/index" open-type="switchTab" class="cart">
+      <view class="iconfont iconcart"></view>
+      购物车
+    </navigator> 
+  </view>
+  <view class="right">
+    <view class="add_to_cart" bindtap="addToCart">加入购物车</view>
+    <navigator url="/pages/cart/index" open-type="switchTab" class="buy">立即购买</navigator>
+  </view>
+</view>

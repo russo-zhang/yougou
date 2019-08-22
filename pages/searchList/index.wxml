@@ -1,0 +1,48 @@
+<!-- 搜索框 -->
+<view class="search">
+  <view class="content">
+    <icon type="search" size="16" /> {{query}}
+  </view>
+</view>
+
+<view class="tab">
+  <view class="active">综合</view>
+  <view>销量</view>
+  <view class="price">
+    价格
+    <view class="arrow">
+      <view class="iconfont iconarrowdropup up"></view>
+      <view class="iconfont iconarrow-down1 down"></view>
+    </view>
+  </view>
+</view>
+
+<view class="goodsList">
+  <navigator 
+  url="/pages/detail/index?goods_id={{item.goods_id}}" 
+  class="goods" 
+  wx:for="{{goodsList}}" 
+  wx:key="{{index}}">
+    <view class="left">
+      <image src="{{item.goods_small_logo}}"></image>
+    </view>
+    <view class="right">
+      <view class="text">
+        {{item.goods_name}}
+      </view>
+      <view class="price">
+        ¥
+        <text>{{item.priceHead}}</text>.{{item.priceTail}}
+      </view>
+    </view>
+  </navigator>
+</view>
+
+<view class="bottom" wx:if="{{loadMore}}">
+  {{goodsList.length>0? "加载更多":"加载中"}}
+  <view class="iconfont iconloading-dotted loading"></view>
+</view>
+
+<view class="bottom" wx:if="{{!loadMore}}">
+  没有更多了
+</view>

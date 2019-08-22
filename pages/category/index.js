@@ -1,4 +1,4 @@
-import request from "../../utils/request.js"
+import request from "../../utils/request.js" 
 Page({
 
   /**
@@ -27,7 +27,12 @@ Page({
       console.log(res)
       this.setData({ brands: res.data.message[event.currentTarget.dataset.index].children })
     })
-  }
+  },
+  // search(event){
+  //   wx.redirectTo({
+  //     url: '/pages/searchList/index?query=' + event.currentTarget.dataset.name
+  //   })
+  // }
 
 
 })

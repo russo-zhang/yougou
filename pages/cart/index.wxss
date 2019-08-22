@@ -1,1 +1,244 @@
-/* pages/cart/index.wxss */
+page, .container {
+  background: #f6f6f6;
+}
+.header{
+    background: white;
+}
+
+.accept_info {
+  padding: 20rpx;
+  height: 172rpx;
+  line-height: 86rpx;
+  font-size: 14px;
+
+}
+
+.accept_info .person {
+  display: flex;
+  justify-content: space-between;
+}
+
+.person .phone {
+  margin-right: 60rpx;
+}
+
+.person .phone::after {
+  position: absolute;
+  top: 56rpx;
+  right: 34rpx;
+  width: 14rpx;
+  height: 14rpx;
+  display: block;
+  content: "";
+  transform: rotate(45deg);
+  border-right: 1px solid #999;
+  border-top: 1px solid #999;
+}
+.accept_info .address{
+  /* width: 100%; */
+  height: 86rpx;
+  /* line-height: 86rpx; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+ 
+}
+.addAddress{
+    padding:40rpx 20rpx;
+}
+
+.border image {
+  width: 750rpx;
+  height: 15rpx;
+  display: block;
+}
+
+.title {
+  display: flex;
+  border-top: 20rpx solid #f4f4f4;
+  border-bottom: 2px solid #ddd;
+  background: white;
+  height: 87rpx;
+  line-height: 87rpx;
+  padding-left: 20rpx;
+}
+
+.title>.iconfont {
+  padding-top: 2px;
+}
+
+/* 商品列表 */
+.goods{
+  padding-bottom: 110rpx;
+}
+.sliderView{
+  padding: 0;
+
+}
+.weui-cell{
+  padding: 0 !important;
+}
+.goods_item {
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+}
+.goods_item .iconfont {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  color: gray;
+  margin-left: 30rpx;
+  margin-right:10rpx; 
+}
+
+.active {
+  color: #eb4450 !important;
+}
+.goods_item .main{
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  padding: 20rpx;
+  border-bottom:1px solid #dddddd;
+}
+
+.goods_item .left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.goods .goods_item .left image {
+  width: 160rpx;
+  height: 160rpx;
+  margin-right: 20rpx;
+}
+
+.goods_item .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+}
+
+.goods_item .right .text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-bottom: 30rpx;
+}
+
+.goods_item .right .price_count {
+  display: flex;
+  justify-content: space-between;
+}
+
+.goods_item .right .price_count .price {
+  color: #eb4450;
+  font-size: 14px;
+}
+
+.goods_item .right .price_count .price>text {
+  font-size: 18px;
+}
+
+.goods_item .right .price_count .count {
+  display: flex;
+}
+
+
+.count .minus, .add {
+  width: 40rpx;
+  height: 40rpx;
+  border: 2px solid #666;
+  line-height: 40rpx;
+  text-align: center;
+}
+
+.count .num {
+  width: 60rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin: 0 20rpx;
+  font-size: 12px;
+  text-align: center;
+}
+
+.empty{
+  width: 750rpx;
+  line-height:200rpx;
+  text-align: center;
+}
+
+
+/* 底部结算栏 */
+.bottom_bar{
+  width: 100%;
+  height: 100rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  
+}
+.bottom_bar .left{
+  display: flex;
+
+}
+.bottom_bar .left .pick_all .iconblchecked {
+   width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  /* font-size: 30px; */
+  color: gray;
+  background: white;
+  margin-left: 30rpx;
+  margin-right:10rpx; 
+}
+.bottom_bar .left .pick_all {
+  display: flex;
+    justify-content: center;
+  align-items: center;
+  margin-left: 30rpx;
+}
+.bottom_bar .left .total{
+  margin-left: 30rpx;
+  padding: 20rpx;
+}
+.bottom_bar .left .total .cost{
+  display: flex;
+}
+.bottom_bar .left .total .cost .num{
+  margin-left: 20rpx;
+  color: #eb4450;
+}
+.bottom_bar .left .total .cost .num>text{
+  font-size:12px;
+}
+.bottom_bar .left .total .freight{
+  font-size:12px;
+  color:#aaa;
+}
+
+.bottom_bar .right{
+  width: 230rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: white;
+  background: #eb4450;
+}
+
+.demo{
+  width: 750rpx;
+  width: 100rpx;
+  background: gold;
+}

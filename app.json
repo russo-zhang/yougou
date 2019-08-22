@@ -3,12 +3,15 @@
     "pages/index/index",
     "pages/category/index",
     "pages/cart/index",
-    "pages/personal/index"
+    "pages/personal/index",
+    "pages/searchList/index",
+    "pages/detail/index",
+    "pages/demo/index"
   ],
   "window": {
     "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#ff2d4a",
-    "navigationBarTitleText": "优购",
+    "navigationBarTitleText": "汇购商城",
     "navigationBarTextStyle": "white"
   },
   "tabBar": {
